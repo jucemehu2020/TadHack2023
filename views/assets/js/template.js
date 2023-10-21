@@ -1,11 +1,11 @@
-
-
 const main = () => {
     $('.logOut_btn').addClass('d-none')
     events()
 }
 const events = () => {
-    //$("#btnLogin").click(login)
+    $("#torredelreloj").click(() => {window.location.href = "./torredelreloj"} )
+    $("#puentedelhumilladero").click(() => {window.location.href = "./puentedelhumilladero"} )
+    $("#iglesiasafrancisco").click(() => {window.location.href = "./iglesiasafrancisco"} )
 
     const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
@@ -30,11 +30,6 @@ const events = () => {
     menuBar.addEventListener('click', function () {
         sidebar.classList.toggle('hide');
     })
-
-
-
-
-
 
 
     const searchButton = document.querySelector('#content nav form .form-input button');

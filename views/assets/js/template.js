@@ -5,7 +5,6 @@ const main = () => {
     events()
 }
 const events = () => {
-    //$("#btnLogin").click(login)
 
     const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
@@ -81,6 +80,7 @@ const events = () => {
             document.body.classList.remove('dark');
         }
     })
+
 }
 
 $(main);

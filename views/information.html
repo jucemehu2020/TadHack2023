@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Información</title>
+    </head>
+    <body>
+        <h1>Información del lugar</h1>
+        <canvas id="qr"></canvas>
+        <script>
+            var qr = new QRious({
+                element: document.getElementById("qr"),
+            });
+            qr.foreground = "#c3a531";
+            qr.level = "H";
+            qr.padding = 25;
+            qr.size = 250;
+            qr.value = "https://es.wikipedia.org/wiki/Popay%C3%A1n";
+
+            console.log(qr.value);
+        </script>
+    </body>
+</html>

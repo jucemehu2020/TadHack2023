@@ -12,10 +12,10 @@
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.2.1",
+    "install": "^0.13.0",
+    "npm": "^10.2.1",
     "pdf-extraction": "^1.0.2",
-    "qrcode": "^1.5.1",
-    "swig": "^1.4.2",
+    "pg": "^8.11.3",
     "whiskers": "^0.4.0"
   }
 }

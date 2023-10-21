@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PRUEBAS</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRUEBAS</title>
-</head>
+    <body>
+        <h1>HOLA MUNDO</h1>
+        <canvas id="qr"></canvas>
+        <script>
+            var qr = new QRious({
+                element: document.getElementById("qr")
+            });
+            qr.foreground = "#c3a531";
+            qr.level = "H";
+            qr.padding = 25;
+            qr.size = 250;
+            qr.value = "https://es.wikipedia.org/wiki/Popay%C3%A1n";
 
-<body>
-    <h1>HOLA MUNDO</h1>
-</body>
-
+            console.log(qr.value);
+        </script>
+    </body>
 </html>

@@ -10,16 +10,16 @@
         <h1>HOLA MUNDO</h1>
         <canvas id="qr"></canvas>
         <script>
-            (function() {
-                var qr = new QRious({
-                  element: document.getElementById('qr'),
-                  value: 'https://google.com',
-                  size: 500,
-                  padding: 25,
-                  foreground: '#c3a531',
-                });
-              })();
+            var qr = new QRious({
+                element: document.getElementById("qr")
+            });
+            qr.foreground = "#c3a531";
+            qr.level = "H";
+            qr.padding = 25;
+            qr.size = 250;
+            qr.value = "https://es.wikipedia.org/wiki/Popay%C3%A1n";
+
+            console.log(qr.value);
         </script>
     </body>
-    
 </html>

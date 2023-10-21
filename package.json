@@ -1,0 +1,21 @@
+{
+  "name": "testtemplatepdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "pdf-extraction": "^1.0.2",
+    "qrcode": "^1.5.1",
+    "swig": "^1.4.2",
+    "whiskers": "^0.4.0"
+  }
+}

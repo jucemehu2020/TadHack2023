@@ -1,0 +1,7 @@
+{
+    "protocol_conection_is_http": true,
+    "url_conection": "127.0.0.1",
+    "port_conection":"3000",
+
+    "port_this_server": "3000"
+}

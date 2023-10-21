@@ -1,0 +1,3 @@
+__config = {
+    "resolucion": "vga",
+}

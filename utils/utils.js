@@ -1,5 +1,6 @@
 const https = require('https')
 const http = require('http')
+const dicc = require('../config/text/spa.json')
 
 async function render(req, res, view, opt = {}) {
     const assetsCss = './assets/css/'
@@ -12,6 +13,43 @@ async function render(req, res, view, opt = {}) {
         }
     }
     res.render('main.html', opt)
+}
+
+function try_(handler) {
+    return async (req, res, next) => {
+        try {
+            await sendOk(res, req, await handler(req, res))
+        } catch (e) {
+
+            console.log("Main Error:", e)
+            var error = "General"
+            if (e && e.message)
+                error = e.message
+            error = buscarEnDiccionario(error)
+            res.status(500).send({
+                success: false,
+                error
+            });
+        }
+    };
+}
+
+function buscarEnDiccionario(txt) {
+    const aPalabras = txt.split(' ')
+    var palabra
+    var final = []
+    for (var a in aPalabras) {
+        palabra = aPalabras[a]
+        if (dicc[palabra])
+            palabra = dicc[palabra]
+        final.push(palabra)
+    }
+    return final.join(' ')
+}
+
+async function sendOk(res, req, data = {}) {
+    data.success = true
+    res.send(data)
 }
 
 function ajaxBack(opt) {
@@ -70,5 +108,6 @@ function ajaxBack(opt) {
     });
 }
 
+module.exports.try = try_
 module.exports.render = render
 module.exports.ajaxBack = ajaxBack

@@ -1,7 +1,23 @@
 {
     "protocol_conection_is_http": true,
     "url_conection": "127.0.0.1",
-    "port_conection":"3000",
-
-    "port_this_server": "3000"
+    "port_conection": "3000",
+    "port_this_server": "3000",
+    "text": "spa",
+    "db": {
+        "usuario_db": "root",
+        "contrasena_db": "OlaREJj0fpxgd94Xr8ZHLiU3Go5c6217",
+        "host_db": "tpe1.clusters.zeabur.com",
+        "nombre_db": "tadhack",
+        "puerto_db": 30819,
+        "nombre_tabla_1_db": "tadhack"
+    },
+    "db_local": {
+        "usuario_db": "postgres",
+        "contrasena_db": "gse",
+        "host_db": "localhost",
+        "nombre_db": "tadhack2023",
+        "puerto_db": 5432,
+        "nombre_tabla_1_db": "tadhack"
+    }
 }

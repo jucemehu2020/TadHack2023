@@ -5,8 +5,8 @@ router.get('/', async (req, res) => {
     __u.render(req, res, 'template');
 });
 
-router.get('/info', async (req, res) => {
-    __u.render(req, res, 'information');
+router.get('/prueba', async (req, res) => {
+    __u.render(req, res, 'app-index');
 });
 
 router.get('/torredelreloj', async (req, res) => {

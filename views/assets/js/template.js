@@ -7,6 +7,7 @@ const events = () => {
     $("#puentedelhumilladero").click(() => {window.location.href = "./puentedelhumilladero"} )
     $("#iglesiasafrancisco").click(() => {window.location.href = "./iglesiasafrancisco"} )
 
+
     const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
     allSideMenu.forEach(item => {
@@ -76,6 +77,7 @@ const events = () => {
             document.body.classList.remove('dark');
         }
     })
+
 }
 
 $(main);

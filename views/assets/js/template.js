@@ -6,6 +6,10 @@ const main = () => {
 }
 const events = () => {
     $("#btnLogin").click(login)
+
+    $('#btnPrueba').click(() => {
+        window.location.href = "./prueba";
+    })
 }
 const login = () => {
     window.location.href = "./";

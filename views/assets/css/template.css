@@ -1,3 +1,9 @@
 body {
-    background-color: #727272; /* Cambia #ff0000 al color que desees */
+    background-color: #ffffff; /* Cambia #ff0000 al color que desees */
+}
+
+#qr {
+    width:160px;
+    height:160px;
+    margin-top:15px;
 }

@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PRUEBAS</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRUEBAS</title>
-</head>
-
-<body>
-    <h1>HOLA MUNDO</h1>
-</body>
-
+    <body>
+        <h1>HOLA MUNDO</h1>
+        <canvas id="qr"></canvas>
+        <script>
+            (function() {
+                var qr = new QRious({
+                  element: document.getElementById('qr'),
+                  value: 'https://google.com',
+                  size: 500,
+                  padding: 25
+                });
+              })();
+        </script>
+    </body>
+    
 </html>

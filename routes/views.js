@@ -2,7 +2,19 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
+    __u.render(req, res, 'home');
+});
+
+router.get('/popayan', async (req, res) => {
     __u.render(req, res, 'template');
+});
+
+router.get('/medellin', async (req, res) => {
+    __u.render(req, res, 'template_medellin');
+});
+
+router.get('/cartagena', async (req, res) => {
+    __u.render(req, res, 'template_cartagena');
 });
 
 router.get('/prueba', async (req, res) => {

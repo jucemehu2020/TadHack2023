@@ -76,19 +76,15 @@ const events = () => {
     })
 
     const switchMode = document.getElementById('switch-mode');
-    const cardTitles = document.querySelectorAll('#content main .card-title');
+    const container_home = document.getElementById('contenedor_informarcion');
 
     switchMode.addEventListener('change', function () {
         if (this.checked) {
             document.body.classList.add('dark');
-            cardTitles.forEach(cardTitle => {
-                cardTitle.style.color = 'white';
-            });
+            container_home.style.color = 'white'
         } else {
             document.body.classList.remove('dark');
-            cardTitles.forEach(cardTitle => {
-                cardTitle.style.color = 'black';
-            });
+            container_home.style.color = 'black'
         }
     })
 

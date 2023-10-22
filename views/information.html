@@ -16,7 +16,16 @@
         <h2>QR Iglesia de San Francisco</h2>
         <br>
         <canvas id="qr3"></canvas>
+        <h2>QR Belen</h2>
         <br>
+        <canvas id="qr4"></canvas>
+        <h2>QR El Morro</h2>
+        <br>
+        <canvas id="qr5"></canvas>
+        <h2>QR Pueblito Patojo</h2>
+        <br>
+        <canvas id="qr6"></canvas>
+        
         <script>
             var qr1 = new QRious({
                 element: document.getElementById("qr1"),
@@ -44,6 +53,33 @@
             qr3.padding = 25;
             qr3.size = 250;
             qr3.value = "./iglesiasafrancisco.html";
+
+            var qr4 = new QRious({
+                element: document.getElementById("qr4"),
+            });
+            qr4.foreground = "#c3a531";
+            qr4.level = "H";
+            qr4.padding = 25;
+            qr4.size = 250;
+            qr4.value = "./belen.html";
+
+            var qr5 = new QRious({
+                element: document.getElementById("qr5"),
+            });
+            qr5.foreground = "#c3a531";
+            qr5.level = "H";
+            qr5.padding = 25;
+            qr5.size = 250;
+            qr5.value = "./elmorro.html";
+
+            var qr6 = new QRious({
+                element: document.getElementById("qr6"),
+            });
+            qr6.foreground = "#c3a531";
+            qr6.level = "H";
+            qr6.padding = 25;
+            qr6.size = 250;
+            qr6.value = "./pueblitopatojo.html";
 
         </script>
     </body>

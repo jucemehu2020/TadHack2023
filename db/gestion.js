@@ -1,14 +1,15 @@
 const ConexionDB = require('./conexion.js');
 
-async function insertarDatos(oData) {
+async function insertarInformacion(oData) {
     const client = await ConexionDB.conectarBD();
     try {
+        const nombre_sitio = oData.nombre_sitio.replace(/ /g, "_");
         const query = {
             text: `
-            INSERT INTO ${__config.db.nombre_tabla_1_db} (usuario)
-            VALUES ($1)
+            INSERT INTO ${__config.db.nombre_tabla_popayan_db} (nombre_sitio, historia, curiosidades, otros_lugares)
+            VALUES ($1, $2, $3, $4)
             RETURNING id`,
-            values: [oData.usuario],
+            values: [nombre_sitio.toLowerCase(), oData.historia, oData.curiosidades, oData.otros_lugares],
         };
 
         const resultado_insercion = await client.query(query);
@@ -42,5 +43,5 @@ async function obtenerDatos() {
     }
 }
 
-module.exports.insertarDatos = insertarDatos
+module.exports.insertarInformacion = insertarInformacion
 module.exports.obtenerDatos = obtenerDatos

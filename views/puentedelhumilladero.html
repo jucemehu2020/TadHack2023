@@ -69,24 +69,41 @@
 
     <!-- MAIN -->
     <main>
+      <div id="contenedor_informarcion" style="text-align: center;">
+        <h1><b>PUENTE DEL HUMILLADERO</b></h1>
+      </div>
       <div class="contenedor-imagenes">
-          <div class="box">
-              <img src="./imgs/PuenteDelHumilladero/2.jpg" alt="">
-          </div>
+        <div class="box">
+          <img src="./imgs/PuenteDelHumilladero/2.jpg" alt="">
+        </div>
 
-          <div class="box">
-              <img src="./imgs/PuenteDelHumilladero/3.jpg" alt="">
-          </div>
+        <div class="box">
+          <img src="./imgs/PuenteDelHumilladero/3.jpg" alt="">
+        </div>
 
-          <div class="box">
-              <img src="./imgs/PuenteDelHumilladero/4.jpg" alt="">
-          </div>
+        <div class="box">
+          <img src="./imgs/PuenteDelHumilladero/4.jpg" alt="">
+        </div>
       </div>
       <div style="text-align: center;">
-        <a target="_blank"><button type="button" class="btn btn-primary" id="torredelreloj">Escuchar
-            Historia</button></a>
+        <br>
+        <br>
+        <div class="callButton">
+          <button id="btnLlamada" class="btn btn-primary"></button>
+        </div>
+        <div class="row">
+          <div class="innervideo">
+            <video class="localVideo" id="engage-digital-local-video" style="width:0 ; height: 0;" autoplay loop muted
+              playsinline></video>
+          </div>
+        </div>
+        <div class="row">
+          <div class="innervideo">
+          </div><video class="remoteVideo" id="engage-digital-remote-video" autoplay loop playsinline
+            style="width:0 ; height: 0;"></video>
+        </div>
       </div>
-  </main>
+    </main>
 
     <!-- <main>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

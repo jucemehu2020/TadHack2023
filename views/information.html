@@ -17,6 +17,15 @@
         <br>
         <canvas id="qr3"></canvas>
         <br>
+        <h2>QR Belen</h2>
+        <canvas id="qr4"></canvas>
+        <br>
+        <h2>QR El Morro</h2>
+        <canvas id="qr5"></canvas>
+        <br>
+        <h2>QR IPueblito Patojo</h2>
+        <canvas id="qr6"></canvas>
+        <br>
         <script>
             var qr1 = new QRious({
                 element: document.getElementById("qr1"),
@@ -25,7 +34,7 @@
             qr1.level = "H";
             qr1.padding = 25;
             qr1.size = 250;
-            qr1.value = "./torredelreloj.html";
+            qr1.value = "https://s9vb4wb8cn.us-east-1.awsapprunner.com/torredelreloj";
 
             var qr2 = new QRious({
                 element: document.getElementById("qr2"),
@@ -34,7 +43,7 @@
             qr2.level = "H";
             qr2.padding = 25;
             qr2.size = 250;
-            qr2.value = "./puentedelhumilladero.html";
+            qr2.value = "https://s9vb4wb8cn.us-east-1.awsapprunner.com/puentedelhumilladero.html";
 
             var qr3 = new QRious({
                 element: document.getElementById("qr3"),
@@ -43,7 +52,34 @@
             qr3.level = "H";
             qr3.padding = 25;
             qr3.size = 250;
-            qr3.value = "./iglesiasafrancisco.html";
+            qr3.value = "https://s9vb4wb8cn.us-east-1.awsapprunner.com/iglesiasafrancisco.html";
+
+            var qr4 = new QRious({
+                element: document.getElementById("qr4"),
+            });
+            qr4.foreground = "#c3a531";
+            qr4.level = "H";
+            qr4.padding = 25;
+            qr4.size = 250;
+            qr4.value = "https://s9vb4wb8cn.us-east-1.awsapprunner.com/belen.html";
+
+            var qr5 = new QRious({
+                element: document.getElementById("qr5"),
+            });
+            qr5.foreground = "#c3a531";
+            qr5.level = "H";
+            qr5.padding = 25;
+            qr5.size = 250;
+            qr5.value = "https://s9vb4wb8cn.us-east-1.awsapprunner.com/elmorro.html";
+
+            var qr6 = new QRious({
+                element: document.getElementById("qr6"),
+            });
+            qr6.foreground = "#c3a531";
+            qr6.level = "H";
+            qr6.padding = 25;
+            qr6.size = 250;
+            qr6.value = "https://s9vb4wb8cn.us-east-1.awsapprunner.com/pueblitopatojo.html";
 
         </script>
     </body>

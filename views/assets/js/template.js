@@ -6,6 +6,9 @@ const events = () => {
     $("#torredelreloj").click(() => {window.location.href = "./torredelreloj"} )
     $("#puentedelhumilladero").click(() => {window.location.href = "./puentedelhumilladero"} )
     $("#iglesiasafrancisco").click(() => {window.location.href = "./iglesiasafrancisco"} )
+    $("#belen").click(() => {window.location.href = "./belen"} )
+    $("#elmorro").click(() => {window.location.href = "./elmorro"} )
+    $("#pueblitopatojo").click(() => {window.location.href = "./pueblitopatojo"} )
 
 
     const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
@@ -20,9 +23,6 @@ const events = () => {
             li.classList.add('active');
         })
     });
-
-
-
 
     // TOGGLE SIDEBAR
     const menuBar = document.querySelector('#content nav .bx.bx-menu');

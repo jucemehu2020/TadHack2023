@@ -25,6 +25,18 @@ router.get('/info', async (req, res) => {
     __u.render(req, res, 'information');
 });
 
+router.get('/belen', async (req, res) => {
+    __u.render(req, res, 'belen');
+});
+
+router.get('/elmorro', async (req, res) => {
+    __u.render(req, res, 'elmorro');
+});
+
+router.get('/pueblitopatojo', async (req, res) => {
+    __u.render(req, res, 'pueblitopatojo');
+});
+
 /*router.get('/', (req, res) => {
     __u.render(req, res, 'iniciar_sesion', {
         recaptcha: __config.recaptcha.key_view

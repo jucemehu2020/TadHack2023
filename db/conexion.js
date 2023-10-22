@@ -13,6 +13,7 @@ async function conectarBD() {
         await client.connect();
         return client;
     } catch (error) {
+        throw new Error(error);
     }
 }
 

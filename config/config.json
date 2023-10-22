@@ -10,7 +10,7 @@
         "host_db": "tpe1.clusters.zeabur.com",
         "nombre_db": "tadhack",
         "puerto_db": 30819,
-        "nombre_tabla_1_db": "tadhack"
+        "nombre_tabla_popayan_db": "popayan"
     },
     "db_local": {
         "usuario_db": "postgres",
@@ -18,6 +18,6 @@
         "host_db": "localhost",
         "nombre_db": "tadhack2023",
         "puerto_db": 5432,
-        "nombre_tabla_1_db": "tadhack"
+        "nombre_tabla_popayan_db": "popayan"
     }
 }

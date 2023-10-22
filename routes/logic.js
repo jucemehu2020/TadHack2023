@@ -6,9 +6,9 @@ router.post('/test', __u.try(async (req, res) => {
     return { respuesta: "funcino" };
 }))
 
-router.post('/insertar', __u.try(async (req, res) => {
+router.post('/insertarInformacion', __u.try(async (req, res) => {
     var o = req.body
-    const resp = await GestionBD.insertarDatos(o)
+    const resp = await GestionBD.insertarInformacion(o)
     return { respuesta: resp }
 }))
 

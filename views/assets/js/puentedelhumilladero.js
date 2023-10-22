@@ -12,10 +12,10 @@ var engageDigitalClickToCallConfig = {
     callBtnId: 'btnLlamada',
 
     /** The text to be displayed in the call button before the establishment of the call*/
-    makeCallText: 'Call',
+    makeCallText: 'Llamar',
 
     /** The text to be displayed on call button once the call is established or in the process of connecting. So the user will get the context and can disconnect the call.*/
-    disconnectCallText: 'End Call',
+    disconnectCallText: 'Terminar Llamada',
 
     /** Id of the Local Video element. Local video will be rendered here*/
     localVideoId: 'engage-digital-local-video',
@@ -109,12 +109,18 @@ const events = () => {
     })
 
     const switchMode = document.getElementById('switch-mode');
+    const container_home = document.getElementById('contenedor_informarcion');
+    const container_home2 = document.getElementById('contenedor_informarcion2');
 
     switchMode.addEventListener('change', function () {
         if (this.checked) {
             document.body.classList.add('dark');
+            container_home.style.color = 'white'
+            container_home2.style.color = 'white'
         } else {
             document.body.classList.remove('dark');
+            container_home.style.color = 'black'
+            container_home2.style.color = 'black'
         }
     })
 

@@ -17,6 +17,7 @@
     "eslint": "^8.52.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
+    "newrelic": "^11.2.1",
     "npm": "^10.2.1",
     "pdf-extraction": "^1.0.2",
     "pg": "^8.11.3",

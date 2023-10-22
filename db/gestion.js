@@ -19,17 +19,18 @@ async function insertarInformacion(oData) {
 
     } catch (error) {
         console.log("Error: ", error);
-        throw Error("ERROR_OBTENER_DATOS")
+        throw Error("ERROR_INSERTAR_DATOS")
     } finally {
         client.end();
     }
 }
 
-async function obtenerDatos() {
+async function obtenerInformacion(oData) {
     const client = await ConexionDB.conectarBD();
+    const nombre_sitio = oData.nombre_sitio.replace(/ /g, "_");
     try {
         const query = {
-            text: `SELECT * FROM ${__config.db.nombre_tabla_1_db}`,
+            text: `SELECT * FROM ${__config.db.nombre_tabla_popayan_db} where = ${nombre_sitio.toLowerCase()}`,
         };
 
         const result = await client.query(query);
@@ -44,4 +45,4 @@ async function obtenerDatos() {
 }
 
 module.exports.insertarInformacion = insertarInformacion
-module.exports.obtenerDatos = obtenerDatos
+module.exports.obtenerInformacion = obtenerInformacion

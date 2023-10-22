@@ -7,18 +7,44 @@
     </head>
     <body>
         <h1>Información del lugar</h1>
-        <canvas id="qr"></canvas>
+        <h2>QR Torre del Reloj</h2>
+        <br>
+        <canvas id="qr1"></canvas>
+        <h2>QR Puente del humilladero</h2>
+        <br>
+        <canvas id="qr2"></canvas>
+        <h2>QR Iglesia de San Francisco</h2>
+        <br>
+        <canvas id="qr3"></canvas>
+        <br>
         <script>
-            var qr = new QRious({
-                element: document.getElementById("qr"),
+            var qr1 = new QRious({
+                element: document.getElementById("qr1"),
             });
-            qr.foreground = "#c3a531";
-            qr.level = "H";
-            qr.padding = 25;
-            qr.size = 250;
-            qr.value = "https://es.wikipedia.org/wiki/Popay%C3%A1n";
+            qr1.foreground = "#c3a531";
+            qr1.level = "H";
+            qr1.padding = 25;
+            qr1.size = 250;
+            qr1.value = "./torredelreloj.html";
 
-            console.log(qr.value);
+            var qr2 = new QRious({
+                element: document.getElementById("qr2"),
+            });
+            qr2.foreground = "#c3a531";
+            qr2.level = "H";
+            qr2.padding = 25;
+            qr2.size = 250;
+            qr2.value = "./puentedelhumilladero.html";
+
+            var qr3 = new QRious({
+                element: document.getElementById("qr3"),
+            });
+            qr3.foreground = "#c3a531";
+            qr3.level = "H";
+            qr3.padding = 25;
+            qr3.size = 250;
+            qr3.value = "./iglesiasafrancisco.html";
+
         </script>
     </body>
 </html>

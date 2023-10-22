@@ -12,8 +12,8 @@ router.post('/insertarInformacion', __u.try(async (req, res) => {
     return { respuesta: resp }
 }))
 
-router.post('/obtener', __u.try(async (req, res) => {
-    const resp = await GestionBD.obtenerDatos()
+router.post('/obtenerInformacion', __u.try(async (req, res) => {
+    const resp = await GestionBD.obtenerInformacion()
     return { respuesta: resp }
 }))
 

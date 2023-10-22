@@ -1,4 +1,4 @@
 {
-    "ERROR": "Prueba de error2",
-    "ERROR_OBTENER_DATOS": "Error al obtener los datos"
+    "ERROR_OBTENER_DATOS": "Error al obtener los datos",
+    "ERROR_INSERTAR_DATOS": "Error al insertar los datos"
 }

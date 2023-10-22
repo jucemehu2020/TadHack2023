@@ -40,7 +40,7 @@ jobs:
         id: deploy-apprunner
         uses: awslabs/amazon-app-runner-deploy@main        
         with:
-          service: privacy-protect-app-runner
+          service: tadhack-2023-app-runner
           image: ${{ steps.build-image.outputs.image }}          
           access-role-arn: ${{ secrets.ROLE_ARN }}       
           region: ${{ secrets.AWS_REGION }}

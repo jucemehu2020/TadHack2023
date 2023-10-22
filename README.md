@@ -6,3 +6,11 @@ To test this copy or clone all the files with same directory structure and serve
 e.g:
 
 $ npm install
+
+# Docker image
+
+```
+docker build -t tadhackapp .
+docker run -it tadhackapp
+```
+

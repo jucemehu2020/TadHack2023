@@ -1,12 +1,14 @@
-FROM node:18-alpine
+FROM node:18
 
 WORKDIR /
 
 COPY package*.json ./
 
-RUN npm i
+RUN npm install
 
 COPY . .
+
+RUN npm run linter
 
 EXPOSE 3000
 

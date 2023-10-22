@@ -4,15 +4,20 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "lint": "eslint **/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js",
+    "format": "prettier --write src/**/*.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "eslint": "^8.52.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
+    "newrelic": "^11.2.1",
     "npm": "^10.2.1",
     "pdf-extraction": "^1.0.2",
     "pg": "^8.11.3",

@@ -5,6 +5,7 @@ const cors = require('cors');
 const fs = require('fs');
 const config = require('./config/load')
 const app = express();
+require('newrelic')
 
 const main = async () => {
     await config.load()

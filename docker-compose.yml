@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  tadhackapp:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: tadhack-docker
+    container_name: tadhackapp
+    restart: always
+    ports:
+      - 3000:3000
+    
